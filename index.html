@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hosain Ahmed - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4f46e5",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#161022",
+                        "accent": "#4338ca",
+                        "coffee-dark": "#1C110A",
+                        "coffee-brown": "#4A2C2A",
+                        "coffee-cream": "#F5F5DC",
+                        "coffee-accent": "#D4A056",
+                        "coffee-green": "#2F4F4F"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display bg-coffee-dark text-coffee-cream">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 w-full bg-coffee-dark/80 backdrop-blur-sm">
+                <div
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-coffee-brown px-4 md:px-10 py-3 max-w-7xl mx-auto">
+                    <div class="flex items-center gap-4 text-coffee-cream">
+                        <div class="size-6 text-coffee-accent">
+                            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_535)">
+                                    <path clip-rule="evenodd"
+                                        d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_535">
+                                        <rect fill="white" height="48" width="48"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Hosain Ahmed</h2>
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9 text-sm font-medium leading-normal text-coffee-cream/80">
+                            <a class="hover:text-coffee-accent transition-colors" href="#">Home</a>
+                            <a class="hover:text-coffee-accent transition-colors" href="#">Experience</a>
+                            <a class="hover:text-coffee-accent transition-colors" href="#">Qualifications</a>
+                            <a class="hover:text-coffee-accent transition-colors" href="#">About</a>
+                            <a class="hover:text-coffee-accent transition-colors" href="#">Contact</a>
+                        </div>
+                    </div>
+                    <button class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-coffee-brown">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </header>
+            <main>
+                <section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 z-0">
+                        <img class="w-full h-full object-cover object-center"
+                            data-alt="Stylized coffee beans background"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHe0-Xk22JMyVJc230SouY84iE9u-RmB82R5glLlT5IxgMCGVfVtNrZneSKFZoel_-SW5p0aLvABlY1TmYvnNyPAVkgf6JDqY4ahEfjep8YO4jqLjTKTPtEStYzscsE_jChp8USPneX1gNEGFyi4QYnaGQQ1PmbWmFLC9l9mtVBFid0SYYLmzXZvrNQ9_xfNFTx6tg6oUYH0ICU9bm3roxQDfmZkjaRKjF96DRRJHAlV96EvmpY_4qqioXwrbSWY8jkhY2zaD_EV4" />
+                        <div class="absolute inset-0 bg-black/70"></div>
+                    </div>
+                    <div
+                        class="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-20 md:py-28 text-center flex flex-col items-center">
+                        <div
+                            class="mb-8 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-coffee-accent shadow-2xl">
+                            <img class="w-full h-full object-cover" data-alt="Professional photo of Hosain Ahmed"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFGGMwvx6j9ei4xiqH16C2NxgXyHiD0NuXQ3K3-lWxiWSKyVscCmpqGqmoHmhylX83evaX9r0mhE_SHYlxc6xbD3jYolYjkuMmOXD6650rtgLFa6vwHR04XwBq0N13DyfC6YlMUHziHdSEUTrJfGcDbd7-8G29O8AuPzhnwJEUTB72JIdsq2EDzAkdFQDjOWuKEr9JMn3EKMoosOC_ag4cKSuhGeohpe8i2TRW6xGZ9YUs4Ye9a2BZ9yTrThxQufEwezQwT1yQxVc9" />
+                        </div>
+                        <h1
+                            class="text-coffee-cream text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tighter">
+                            Hosain Ahmed</h1>
+                        <p class="text-coffee-accent text-xl sm:text-2xl md:text-3xl font-bold leading-normal mt-2">
+                            Building, Innovating, Leading</p>
+                        <p
+                            class="text-coffee-cream/90 text-lg md:text-xl font-normal leading-normal mt-6 max-w-2xl mx-auto">
+                            A hybrid professional driven by the 'Blue Lock' philosophy of relentless improvement,
+                            blending technical expertise with creative strategy to build impactful digital experiences.
+                        </p>
+                        <div class="mt-10">
+                            <button
+                                class="inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-8 bg-coffee-accent text-coffee-dark text-base font-bold leading-normal tracking-wide transition-transform hover:scale-105 shadow-lg shadow-coffee-accent/30">
+                                <span class="truncate">Explore My Brew</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="w-full py-16 md:py-24 bg-coffee-dark">
+                    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+                        <h2 class="text-coffee-accent text-3xl md:text-4xl font-bold leading-tight tracking-tight">My
+                            Drive: The 'Blue Lock' Mentality</h2>
+                        <p class="text-coffee-cream/90 text-xl md:text-2xl font-normal leading-relaxed mt-6">Fueled by a
+                            relentless pursuit of growth, I thrive on challenging the status quo. My focus is on
+                            leveraging <span class="font-bold text-coffee-accent">hybrid skills</span> in tech and
+                            business to not just solve problems, but to create <span
+                                class="font-bold text-coffee-accent">game-changing impact</span> and engineer <span
+                                class="font-bold text-coffee-accent">breakthrough solutions</span>.</p>
+                    </div>
+                </section>
+                <section class="w-full py-16 md:py-20 bg-coffee-brown/20">
+                    <div class="max-w-7xl mx-auto px-4 md:px-6">
+                        <h2
+                            class="text-coffee-accent text-3xl md:text-4xl font-bold leading-tight tracking-tight text-center mb-12">
+                            Featured Ventures &amp; Projects</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-coffee-dark rounded-xl shadow-lg overflow-hidden group flex flex-col border border-coffee-brown">
+                                <div class="overflow-hidden">
+                                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        data-alt="A dashboard graph showing a sharp upward trend, representing 328K+ views"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8xLPKthgN9ufL-g6VmjZn3qkxQDwkMOn4yRPWgPDqTchGZEXyOtkGw3U02m_vvbC_5aV1A9WQaxVlfLClZTsLeCCfK0qVFPLTZZinzvuIWQ3a-99LDoHq7chF_Pqw01nNCrBoa7seDfgG4MGx3orDKRcY5wZILUkCfSMXYmMKwsPkuN7DibpnJzj2XXywQwZGbCqTOL2BXOuIQHeU1UKQ37xwxi1qQFyzy9BZ_ZN9Pcok8YmJUvIipeSQ-8LxnFCnndp3L1YJWC-O" />
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="text-2xl font-bold mb-2 text-coffee-cream">Pixelo Merch</h3>
+                                    <p class="text-coffee-cream/80 mb-4 flex-grow">Showcasing significant audience
+                                        growth with over 328K+ views, this project highlights successful digital
+                                        marketing and product-market fit.</p>
+                                    <button
+                                        class="mt-auto inline-flex items-center justify-center gap-2 text-coffee-accent font-bold group-hover:underline">
+                                        View Project <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-coffee-dark rounded-xl shadow-lg overflow-hidden group flex flex-col border border-coffee-brown">
+                                <div class="overflow-hidden">
+                                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        data-alt="A collection of comic books, representing the Royal Comics project"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTNIFMgAwa8hM9rLKObCyVGVa2wZ3yWRDJjSkMituYGTvYTjhJgN1foIk0bu-El4gKWkb0VxFBN2JaZNlNoUJQyoSazwtTylcZWRk4YeZB3eSA2sFnG78HJ2EKxH8qKsoW1hU8hk89IAXjFWNaUcjwDNhtXvM6EEfhgtTrsC0zG4hdRpGSJgc7bPhvSXUdUbRWHfqIxI3TUgs2FFuvRWSKkvyYEAmexAIlqHk2PH0fxnlVQxWJq9lKplasswd74a-n1opNvFDZgkLj" />
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="text-2xl font-bold mb-2 text-coffee-cream">Royal Comics</h3>
+                                    <p class="text-coffee-cream/80 mb-4 flex-grow">A digital platform for comic
+                                        enthusiasts. This project involved developing a content delivery system and
+                                        building a vibrant online community.</p>
+                                    <button
+                                        class="mt-auto inline-flex items-center justify-center gap-2 text-coffee-accent font-bold group-hover:underline">
+                                        Learn More <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-coffee-dark rounded-xl shadow-lg overflow-hidden group flex flex-col md:col-span-2 lg:col-span-1 border border-coffee-brown">
+                                <div class="overflow-hidden">
+                                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                                        data-alt="Data visualization dashboard for a new project"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6FZfxiRAu0OVSLrd5eylMsJr8VZtprL8aH9wLlm3t12pe_Fey5OfWOcEi0aOO91PKQGTZZRH6bUAGpiekfnwompbnW7FFGgA-c9L03BYfUgOqIBVTGE7pDqvOPNKYw9Vn-FG2duGp0-6Jly9ZpkItY23ciyJ0RiOYL2--UFGTNOCJvqd4lVQHrm1sDe8T5NxGq-zUYHDEGpPVipt0reBt8LsKqHjqIhpfxkPxy7pEddFv-IohYI1tyg08cBjmWN1d9jaEYCv2tj1v" />
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="text-2xl font-bold mb-2 text-coffee-cream">Data Insights Platform</h3>
+                                    <p class="text-coffee-cream/80 mb-4 flex-grow">An upcoming venture focused on
+                                        providing actionable business intelligence through intuitive data visualizations
+                                        and analytics.</p>
+                                    <button
+                                        class="mt-auto inline-flex items-center justify-center gap-2 text-coffee-accent font-bold group-hover:underline">
+                                        Coming Soon <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="w-full py-16 md:py-24">
+                    <div class="max-w-7xl mx-auto px-4 md:px-6">
+                        <div
+                            class="bg-coffee-green text-coffee-cream rounded-2xl p-8 md:p-12 lg:p-16 text-center shadow-2xl shadow-coffee-green/20 relative overflow-hidden">
+                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-coffee-cream/5 rounded-full"></div>
+                            <div class="absolute -bottom-16 -left-10 w-48 h-48 bg-coffee-cream/5 rounded-full"></div>
+                            <div class="relative z-10">
+                                <h2 class="text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Ready to
+                                    Connect?</h2>
+                                <p class="text-lg md:text-xl text-coffee-cream/80 mb-8 max-w-2xl mx-auto">Let's discuss
+                                    how we can collaborate to build something remarkable. Reach out to start a
+                                    conversation.</p>
+                                <div class="flex-wrap gap-4 flex justify-center">
+                                    <button
+                                        class="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-8 bg-coffee-accent text-coffee-dark text-base font-bold leading-normal tracking-wide transition-transform hover:scale-105">
+                                        <span class="truncate">Contact Me</span>
+                                    </button>
+                                    <button
+                                        class="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-8 bg-transparent border-2 border-coffee-cream text-coffee-cream text-base font-bold leading-normal tracking-wide transition-colors hover:bg-coffee-cream hover:text-coffee-dark">
+                                        <span class="truncate">View Portfolio</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-coffee-dark border-t border-solid border-coffee-brown">
+                <div
+                    class="max-w-7xl mx-auto py-8 px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-sm text-coffee-cream/60">© 2024 Hosain Ahmed. All rights reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a class="text-coffee-cream/70 hover:text-coffee-accent transition-colors" href="#">
+                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-coffee-cream/70 hover:text-coffee-accent transition-colors" href="#">
+                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
