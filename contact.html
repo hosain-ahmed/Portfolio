@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hosain Ahmed - Contact</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b7860b",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#181611",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 py-5">
+                <div class="layout-content-container flex flex-col max-w-7xl w-full flex-1">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-white/10 px-4 md:px-10 py-3">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="size-4 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_535)">
+                                        <path clip-rule="evenodd"
+                                            d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_6_535">
+                                            <rect fill="white" height="48" width="48"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Hosain Ahmed</h2>
+                        </div>
+                        <div class="flex items-center gap-8">
+                            <nav class="hidden md:flex items-center gap-9">
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                    href="#">Home</a>
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                    href="#">About</a>
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                    href="#">Projects</a>
+                                <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+                            </nav>
+                            <button
+                                class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+                                <span class="truncate">Resume</span>
+                            </button>
+                            <button class="md:hidden text-white">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </header>
+                    <main class="flex-1 py-12 md:py-20 lg:py-24">
+                        <div class="flex flex-col gap-8 px-4 md:px-10">
+                            <div class="flex flex-col gap-3 text-center">
+                                <h1
+                                    class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                    Let's Connect &amp; Collaborate</h1>
+                                <p
+                                    class="text-[#bab19c] text-base md:text-lg font-normal leading-normal max-w-2xl mx-auto">
+                                    Open to new opportunities and discussions. Feel free to reach out using the form
+                                    below or through my social channels.</p>
+                            </div>
+                            <div class="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+                                <div
+                                    class="lg:col-span-3 bg-[#221d10] dark:bg-[#221d10] rounded-xl p-8 border border-solid border-white/10">
+                                    <form class="flex flex-col gap-6">
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                            <label class="flex flex-col flex-1">
+                                                <p class="text-white text-base font-medium leading-normal pb-2">Your
+                                                    Name</p>
+                                                <input
+                                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#544d3b] bg-[#27241b] focus:border-primary h-14 placeholder:text-[#bab19c] p-[15px] text-base font-normal leading-normal transition-all"
+                                                    placeholder="Enter your name" type="text" value="" />
+                                            </label>
+                                            <label class="flex flex-col flex-1">
+                                                <p class="text-white text-base font-medium leading-normal pb-2">Your
+                                                    Email</p>
+                                                <input
+                                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#544d3b] bg-[#27241b] focus:border-primary h-14 placeholder:text-[#bab19c] p-[15px] text-base font-normal leading-normal transition-all"
+                                                    placeholder="Enter your email" type="email" value="" />
+                                            </label>
+                                        </div>
+                                        <label class="flex flex-col flex-1">
+                                            <p class="text-white text-base font-medium leading-normal pb-2">Subject</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#544d3b] bg-[#27241b] focus:border-primary h-14 placeholder:text-[#bab19c] p-[15px] text-base font-normal leading-normal transition-all"
+                                                placeholder="What is this about?" type="text" value="" />
+                                        </label>
+                                        <label class="flex flex-col flex-1">
+                                            <p class="text-white text-base font-medium leading-normal pb-2">Your Message
+                                            </p>
+                                            <textarea
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#544d3b] bg-[#27241b] focus:border-primary min-h-36 placeholder:text-[#bab19c] p-[15px] text-base font-normal leading-normal transition-all"
+                                                placeholder="Write your message here..."></textarea>
+                                        </label>
+                                        <button
+                                            class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors self-start">
+                                            <span class="truncate">Send Message</span>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div
+                                    class="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                                    <div
+                                        class="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white/10 shadow-lg">
+                                        <img alt="Professional headshot of Hosain Ahmed"
+                                            class="w-full h-full object-cover"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Roxjk9VmdBRZ_o0dDaXjqEdpV5yfYzJR25ZfvoWgp455Xwh8VooxOywNZ0cQsC6tAI7AncLIGV-xhP-D14SHOsKSC9UpKfs4uxHbLttJlNr6BtnFO32A6lB6oOpLxWVhBNtq7ESx4s6dhFLvIwNoWOhwUtw4u2F2BskeiRtMvJuM6QsUfQuriPwZHR8mOr2jS9-w9I6CWKKrOBk19Z9m7XjOwc88aiC5MM7z4bZQXM3KMwOG_Kq2OcbPPhrQmZdBrEVXrFbtD4Q" />
+                                    </div>
+                                    <h3 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-3">
+                                        Reach Out Directly</h3>
+                                    <p class="text-[#bab19c] text-base font-normal leading-normal mb-8">Prefer a more
+                                        direct approach? Find me on these platforms or send me an email. I look forward
+                                        to hearing from you.</p>
+                                    <div class="flex flex-col gap-5 w-full">
+                                        <a class="flex items-center gap-4 group" href="#">
+                                            <span
+                                                class="material-symbols-outlined text-[#bab19c] group-hover:text-primary transition-colors">business_center</span>
+                                            <span
+                                                class="text-white font-medium group-hover:text-primary transition-colors">LinkedIn
+                                                Profile</span>
+                                        </a>
+                                        <a class="flex items-center gap-4 group" href="#">
+                                            <span
+                                                class="material-symbols-outlined text-[#bab19c] group-hover:text-primary transition-colors">code</span>
+                                            <span
+                                                class="text-white font-medium group-hover:text-primary transition-colors">GitHub
+                                                Profile</span>
+                                        </a>
+                                        <a class="flex items-center gap-4 group" href="mailto:hosain@example.com">
+                                            <span
+                                                class="material-symbols-outlined text-[#bab19c] group-hover:text-primary transition-colors">mail</span>
+                                            <span
+                                                class="text-white font-medium group-hover:text-primary transition-colors">hosain@example.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="text-center py-8 mt-12 border-t border-solid border-white/10">
+                        <p class="text-sm text-[#bab19c]">© 2024 Hosain Ahmed. All Rights Reserved.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
