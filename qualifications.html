@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="dark" lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -17,14 +17,17 @@
             theme: {
                 extend: {
                     colors: {
-                        'cream': '#F5F5DC', // Soft cream
-                        'warm-grey': '#D3D3D3', // Warm grey
-                        'muted-green': '#A3B18A', // Muted green
-                        'terracotta': '#E07A5F', // Rich terracotta/rust for buttons
-                        'charcoal': '#3D405B', // Deep charcoal for text
-                        'warm-brown': '#815B5B', // Warm brown for accents
-                        'linen': '#FAF0E6', // Light wood/linen grey background
-                        'paper': '#F8F4F0', // Paper-like texture background
+                        'deep-charcoal': '#1a1a1a',
+                        'forest-green': '#1f2a24',
+                        'forest-card': '#2a3b32',
+                        'midnight-blue': '#101727',
+                        'midnight-card': '#1a2335',
+                        'deep-plum': '#2c1e2a',
+                        'plum-card': '#3c2a39',
+                        'accent-gold': '#d4af37',
+                        'accent-teal': '#00f5d4',
+                        'light-grey': '#b0b0b0',
+                        'light-blue': '#a0c4ff'
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"],
@@ -32,9 +35,10 @@
                     },
                     boxShadow: {
                         'soft': '0 4px 12px rgba(0, 0, 0, 0.05)',
+                        'raised': '0 8px 25px rgba(0, 0, 0, 0.2)',
                     },
                     backgroundImage: {
-                        'paper-texture': "url('data:image/svg+xml,%3Csvg width=\"6\" height=\"6\" viewBox=\"0 0 6 6\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.1\" fill-rule=\"evenodd\"%3E%3Cpath d=\"M5 0h1L0 6V5zM6 5v1H5z\"/%3E%3C/g%3E%3C/svg%3E')",
+                        'line-art': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23333' stroke-width='0.5'%3E%3Cpath d='M0 50 Q 25 25, 50 50 T 100 50'/%3E%3Cpath d='M0 60 Q 25 85, 50 60 T 100 60'/%3E%3Cpath d='M-10 20 Q 15 45, 40 20 T 90 20'/%3E%3C/g%3E%3C/svg%3E\")",
                     }
                 },
             },
@@ -43,57 +47,54 @@
     <style>
         body {
             font-family: "Manrope", sans-serif;
-            background-color: #F5F5DC;
-            color: #3D405B;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
         }
 
-        .header-brush {
-            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBLnAN8RsFQXg9jttCZS3-mtBt5aWuY93YTPVBuN9Pum8t8GKa4Ueq_9JPB4e8nJf8CDXNkM9Q4OiY9P2j81y_F1LbwAfLmCFMe8X2b7QX2GKBosHjiKGpBWPwJLFkySQCHVGxBjEtoFXp75sq-sPqk4yM8E5y4RRe_l-6TA5hCRnzAHEVZKilbzdJH9hNlBcjqy6oBz7IvM21jTVCOnhMe-hS-uSzeiTrLCmsHG0jG_YE6eKO0ZD8uHBI5B3iSzsLnQzPifmSg_1GV);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: 150% auto;
-            padding-bottom: 1rem
+        .btn-accent {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        .btn-textured {
-            transition: all 0.2s ease-in-out
-        }
-
-        .btn-textured:hover {
-            transform: translatey(-2px);
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08)
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 
-<body class="bg-cream text-charcoal">
+<body class="bg-deep-charcoal text-white">
     <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
-            <header class="flex flex-1 justify-center bg-cream/80 backdrop-blur-sm sticky top-0 z-50">
+            <header
+                class="flex flex-1 justify-center bg-deep-charcoal/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800 bg-line-art bg-repeat-x bg-[length:auto_60%] bg-bottom">
                 <div class="flex flex-col w-full max-w-7xl flex-1">
-                    <div
-                        class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4 header-brush">
-                        <div class="flex items-center gap-4 text-charcoal">
-                            <div class="size-6 text-warm-brown">
-                                <span class="material-symbols-outlined">carpenter</span>
+                    <div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="size-6 text-accent-gold">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
                             </div>
-                            <a href="index.html" class="text-charcoal text-lg font-bold leading-tight tracking-[-0.015em]">Hosain Ahmed
-                            </a>
+                            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Hosain Ahmed</h2>
                         </div>
                         <div class="flex flex-1 justify-end items-center gap-4 sm:gap-8">
                             <nav class="hidden md:flex items-center gap-6">
-                                <a class="text-charcoal/70 hover:text-warm-brown text-sm font-medium leading-normal"
-                                    href="index.html">Home</a>
-                                <a class="text-warm-brown font-bold text-sm leading-normal" href="#">Experience</a>
-                                <a class="text-charcoal/70 hover:text-warm-brown text-sm font-medium leading-normal"
+                                <a class="text-gray-300 hover:text-accent-gold text-sm font-medium leading-normal"
+                                    href="#">Home</a>
+                                <a class="text-accent-gold font-bold text-sm leading-normal" href="#">Experience</a>
+                                <a class="text-gray-300 hover:text-accent-gold text-sm font-medium leading-normal"
                                     href="#">Qualifications</a>
-                                <a class="text-charcoal/70 hover:text-warm-brown text-sm font-medium leading-normal"
+                                <a class="text-gray-300 hover:text-accent-gold text-sm font-medium leading-normal"
                                     href="#">About</a>
-                                <a class="text-charcoal/70 hover:text-warm-brown text-sm font-medium leading-normal"
+                                <a class="text-gray-300 hover:text-accent-gold text-sm font-medium leading-normal"
                                     href="#">Contact</a>
                             </nav>
                             <button
-                                class="flex md:hidden min-w-10 max-w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-transparent text-charcoal text-sm font-bold">
+                                class="flex md:hidden min-w-10 max-w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-transparent text-white text-sm font-bold">
                                 <span class="material-symbols-outlined">menu</span>
                             </button>
                         </div>
@@ -101,43 +102,42 @@
                 </div>
             </header>
             <main>
-                <section class="w-full bg-cream py-20 md:py-28">
+                <section class="w-full bg-deep-charcoal py-20 md:py-28">
                     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <h1
-                            class="font-serif text-warm-brown tracking-tight text-4xl md:text-5xl font-bold leading-tight">
-                            The Workshop Chronicle</h1>
-                        <p class="text-charcoal/80 text-lg font-normal leading-relaxed mt-4 max-w-3xl mx-auto">
-                            An artisan's log of projects crafted with code, creativity, and conviction. Each piece tells
-                            a story of a problem solved, a skill honed, and a new idea brought to life.
+                        <h1 class="font-serif text-white tracking-tight text-4xl md:text-5xl font-bold leading-tight">
+                            The Project Flow</h1>
+                        <p class="text-light-grey text-lg font-normal leading-relaxed mt-4 max-w-3xl mx-auto">
+                            A showcase of ventures, technical projects, and human-centric roles, each resonating with a
+                            distinct energy and purpose.
                         </p>
                     </div>
                 </section>
-                <section class="w-full bg-linen py-16 sm:py-20 md:py-24" id="entrepreneur">
+                <section class="w-full bg-forest-green py-16 sm:py-20 md:py-24" id="entrepreneur">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="text-center mb-12">
-                            <h2 class="text-3xl font-bold text-warm-brown font-serif">The Entrepreneur's Forge</h2>
-                            <p class="mt-4 text-lg max-w-3xl mx-auto text-charcoal/80">Ventures where ideas were
-                                hammered into tangible brands and businesses.</p>
+                            <h2 class="text-3xl font-bold text-white font-serif">Entrepreneurial Ventures</h2>
+                            <p class="mt-4 text-lg max-w-3xl mx-auto text-light-grey">Ventures where ideas were
+                                cultivated into tangible brands and businesses.</p>
                         </div>
                         <div class="space-y-16">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
                                 <div class="w-full aspect-w-4 aspect-h-3">
                                     <img alt="Pixelo Merch project image"
-                                        class="w-full h-full object-cover rounded-lg shadow-soft"
+                                        class="w-full h-full object-cover rounded-lg shadow-raised"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCueV5m_BbP77Dw80s0UdNMeZKrw4aTddFJ3VmD_YqOTg5Ke62G1ra9cr5j5liIvBlfFbM1iVeE7tnHGBCoHo5w0UhlEkPZkPm2TcuYmd_yhIQ9xSSN7esuZnDT3fhgZ8BInBTItnzSxAhAcfR7UD6CFUMJL8-KrFYce9zeHEhxbnxyQ-k6CSdVRMUDmW6cpS1S-CjQkVdQcVyXqZolPqmnEDvgDMrLItAz0TV54Yaz1liDIph7ccnoIqZ16B9JuCUc8kZKPGXNgYUH" />
                                 </div>
-                                <div class="bg-cream p-8 rounded-lg border border-warm-grey/30 shadow-soft">
-                                    <h3 class="text-2xl font-bold text-charcoal">Pixelo Merch</h3>
-                                    <p class="mt-3 text-charcoal/80">An e-commerce venture that harnessed organic growth
+                                <div class="bg-forest-card p-8 rounded-lg shadow-raised">
+                                    <h3 class="text-2xl font-bold text-white">Pixelo Merch</h3>
+                                    <p class="mt-3 text-light-grey">An e-commerce venture that harnessed organic growth
                                         strategies, focusing on niche apparel and merchandise. This project was a deep
                                         dive into SEO, content marketing, and brand building, achieving significant
                                         online visibility.</p>
                                     <div class="mt-6 flex flex-wrap gap-3">
-                                        <a class="btn-textured bg-terracotta text-cream px-5 py-2.5 rounded-md text-sm font-semibold shadow-sm"
+                                        <a class="btn-accent bg-accent-gold text-deep-charcoal px-5 py-2.5 rounded-md text-sm font-semibold"
                                             href="#">Case Study</a>
-                                        <a class="btn-textured bg-warm-grey text-charcoal px-5 py-2.5 rounded-md text-sm font-semibold shadow-sm"
+                                        <a class="btn-accent bg-accent-gold text-deep-charcoal px-5 py-2.5 rounded-md text-sm font-semibold"
                                             href="#">Have a Visit</a>
-                                        <a class="btn-textured bg-warm-grey text-charcoal px-5 py-2.5 rounded-md text-sm font-semibold shadow-sm"
+                                        <a class="btn-accent bg-accent-gold text-deep-charcoal px-5 py-2.5 rounded-md text-sm font-semibold"
                                             href="#">Website</a>
                                     </div>
                                 </div>
@@ -145,17 +145,17 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
                                 <div class="md:order-2 w-full aspect-w-4 aspect-h-3">
                                     <img alt="Royal Comics project image"
-                                        class="w-full h-full object-cover rounded-lg shadow-soft"
+                                        class="w-full h-full object-cover rounded-lg shadow-raised"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfdPHHLj96CjJXpFNrtu7qxrZoZlIim5yxNofqJitNGgNal0UTM5hsudron7wshVzKqoiuIp32zbbA3qi5xlXocpp1TnCP-KS5NWrOTpsy9hdzDdN6ruWVcDVr5HkJrmYsVOblrKH_B7VeTbv8uheDsk398bs8_bMDL4niUK0sqoo1AmMkkNcDRExx1iN2GLm5mcis_RPwJ7G0KAvFNRN_680ZV3VikZYNXA1f5q5LF8f-WZHCuOwybFnuPGD-hWJNZ9gi_lsKP1Xh" />
                                 </div>
-                                <div class="md:order-1 bg-cream p-8 rounded-lg border border-warm-grey/30 shadow-soft">
-                                    <h3 class="text-2xl font-bold text-charcoal">Royal Comics</h3>
-                                    <p class="mt-3 text-charcoal/80">A creative world-building project that involved
+                                <div class="md:order-1 bg-forest-card p-8 rounded-lg shadow-raised">
+                                    <h3 class="text-2xl font-bold text-white">Royal Comics</h3>
+                                    <p class="mt-3 text-light-grey">A creative world-building project that involved
                                         conceptualizing a new comic universe. This venture focused on character design,
                                         narrative development, and establishing a unique artistic style to engage a
                                         dedicated community of fans.</p>
                                     <div class="mt-6 flex flex-wrap gap-3">
-                                        <a class="btn-textured bg-warm-grey text-charcoal px-5 py-2.5 rounded-md text-sm font-semibold shadow-sm"
+                                        <a class="btn-accent bg-accent-gold text-deep-charcoal px-5 py-2.5 rounded-md text-sm font-semibold"
                                             href="#">Photos</a>
                                     </div>
                                 </div>
@@ -163,17 +163,17 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
                                 <div class="w-full aspect-w-4 aspect-h-3">
                                     <img alt="Exquisite project image"
-                                        class="w-full h-full object-cover rounded-lg shadow-soft"
+                                        class="w-full h-full object-cover rounded-lg shadow-raised"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwP-Wi63eGgLEXxX0krFPR21JB_cPW1EXvGxprhUUw9tmoMFaOe-7rSI5748SnjgybtSmC6rPtJwaydkRhgusNPt4jFr6GoT7g2KnoYdigpdB1c89VMxn_VQ9FlUJLiLR3wQyAJhCQYK2g6XgKZdTnwy2Sr_rUltbro41f9XYwYEqeLCcMyV-OIOVmHL-6XtG_U6Q_rcZ_PtGNeM_60Y8k2TRwROHPdrXAKJg8C-NoRVi9iqVUjCtlrczUJNyUTLgSqOPlpo-lqdeW" />
                                 </div>
-                                <div class="bg-cream p-8 rounded-lg border border-warm-grey/30 shadow-soft">
-                                    <h3 class="text-2xl font-bold text-charcoal">Exquisite</h3>
-                                    <p class="mt-3 text-charcoal/80">An early-stage exploration into building an
+                                <div class="bg-forest-card p-8 rounded-lg shadow-raised">
+                                    <h3 class="text-2xl font-bold text-white">Exquisite</h3>
+                                    <p class="mt-3 text-light-grey">An early-stage exploration into building an
                                         e-commerce platform from the ground up. This project centered on rigorous market
                                         analysis, defining a strong brand identity, and understanding the foundational
                                         pillars of online business strategy.</p>
                                     <div class="mt-6 flex flex-wrap gap-3">
-                                        <a class="btn-textured bg-warm-grey text-charcoal px-5 py-2.5 rounded-md text-sm font-semibold shadow-sm"
+                                        <a class="btn-accent bg-accent-gold text-deep-charcoal px-5 py-2.5 rounded-md text-sm font-semibold"
                                             href="#">Have a Visit</a>
                                     </div>
                                 </div>
@@ -181,18 +181,17 @@
                         </div>
                     </div>
                 </section>
-                <section class="w-full py-16 sm:py-20 md:py-24" id="tech">
+                <section class="w-full bg-midnight-blue py-16 sm:py-20 md:py-24" id="tech">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="text-center mb-12">
-                            <h2 class="text-3xl font-bold text-warm-brown font-serif">The Tech Workbench</h2>
-                            <p class="mt-4 text-lg max-w-3xl mx-auto text-charcoal/80">A showcase of technical skills,
+                            <h2 class="text-3xl font-bold text-white font-serif">Tech &amp; Code</h2>
+                            <p class="mt-4 text-lg max-w-3xl mx-auto text-light-blue">A showcase of technical skills,
                                 where logic and code construct functional and innovative solutions.</p>
                         </div>
-                        <div class="bg-warm-grey/50 p-8 sm:p-12 rounded-lg mb-16">
+                        <div class="bg-midnight-card p-8 sm:p-12 rounded-lg mb-16 shadow-raised">
                             <div class="text-center max-w-4xl mx-auto">
-                                <h3 class="text-2xl font-bold text-charcoal">Hackathon Project: Community Learning MVP
-                                </h3>
-                                <p class="mt-4 text-charcoal/80">In a 24-hour sprint, our team rapidly prototyped and
+                                <h3 class="text-2xl font-bold text-white">Hackathon Project: Community Learning MVP</h3>
+                                <p class="mt-4 text-light-blue">In a 24-hour sprint, our team rapidly prototyped and
                                     developed a functional MVP for a community-based learning platform. This
                                     high-pressure environment honed skills in teamwork, agile development, and efficient
                                     problem-solving under tight deadlines.</p>
@@ -200,14 +199,14 @@
                                     <img alt="Hackathon Project Demo" class="w-full h-full object-cover"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjPpO5B6bwKYbt43Dii7-UnY6lI6_HqpykHAU-87xvpRY-t5ftfgjejO5NCxwBVBtT35MwH82ApzvKViSZG50H-VGsKD0zS2LHJlz6FV0maGASPpaPkhdC7AWf_4iP6RMXp7fsUkCQ95CDeaPltt9PqifqIWDX5nakGT7j_ByLVpzpp9gPdqxDdlkZV3TCXJfoOpzZAcdTkcwXPG-qYTJDzTHBOfVuTdP25V7DSRm9tvbK5_fn2YhRnzWbxPs0kNydvRvJLv9YjK84" />
                                 </div>
-                                <a class="mt-8 inline-block bg-terracotta text-cream px-8 py-3 rounded-lg text-lg font-semibold shadow-soft hover:bg-terracotta/90 transition-colors"
+                                <a class="mt-8 inline-block bg-accent-teal text-deep-charcoal px-8 py-3 rounded-lg text-lg font-semibold shadow-soft hover:bg-accent-teal/90 transition-colors btn-accent"
                                     href="#">View Live Demo / Walkthrough</a>
                             </div>
                         </div>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            <div class="bg-muted-green/20 p-8 rounded-lg">
-                                <h3 class="text-2xl font-bold text-charcoal">Java Desktop Application</h3>
-                                <p class="mt-4 text-charcoal/80">A robust desktop application built with Java, featuring
+                            <div class="bg-midnight-card p-8 rounded-lg shadow-raised">
+                                <h3 class="text-2xl font-bold text-white">Java Desktop Application</h3>
+                                <p class="mt-4 text-light-blue">A robust desktop application built with Java, featuring
                                     a clean GUI and efficient backend processing. This project demonstrates strong
                                     object-oriented programming principles and efficient data handling for a seamless
                                     user experience.</p>
@@ -217,13 +216,13 @@
                                         src="#"></video>
                                 </div>
                                 <div class="mt-6">
-                                    <a class="text-warm-brown font-semibold hover:underline" href="#">Github Repo <span
+                                    <a class="text-light-blue font-semibold hover:underline" href="#">Github Repo <span
                                             class="material-symbols-outlined text-base align-middle">arrow_forward</span></a>
                                 </div>
                             </div>
-                            <div class="bg-warm-grey/50 p-8 rounded-lg">
-                                <h3 class="text-2xl font-bold text-charcoal">Circuit Design &amp; Simulation</h3>
-                                <p class="mt-4 text-charcoal/80">Designed and simulated complex digital circuits using
+                            <div class="bg-midnight-card p-8 rounded-lg shadow-raised">
+                                <h3 class="text-2xl font-bold text-white">Circuit Design &amp; Simulation</h3>
+                                <p class="mt-4 text-light-blue">Designed and simulated complex digital circuits using
                                     Logisim and Verilog, exploring the fundamentals of computer architecture. This
                                     project provided a foundational understanding of how software interacts with
                                     hardware at a low level.</p>
@@ -235,53 +234,52 @@
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTCz8EGJ8jOk9L-Z6QIBMV2IyZOZu-pAbJ1-dW53PbdoQMAaI__pQJ_EpLNTQvegqkuX4nUS5wRvv_j3d728R85mnNH1adedaiUjqNNavq9KL2jLL-sB4oC-H6rjet6DcQOthyBVJZ8b8_BrtQczqqlvNO-N8W_Kt-7vyahZ7vMzCxZxwcgQFFI67Kho-UuzQNbY8otep6EV5v7RlM3AV_wN7hU3Rya5Pk1lYIKepBi2ypbJmMLIG1HNYPd1uzLI6xMueQe0opnQ5" />
                                     <div class="w-full h-24 rounded-lg shadow-soft overflow-hidden">
                                         <video autoplay="" class="w-full h-full object-cover" loop="" muted=""
-                                            poster="https://placehold.co/300x200/D3D3D3/3D405B?text=Sim+Video"
+                                            poster="https://placehold.co/300x200/1a2335/a0c4ff?text=Sim+Video"
                                             src="#"></video>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-16 bg-cream border-t border-dashed border-warm-grey/50 pt-12">
-                            <h3 class="text-2xl font-bold text-center text-charcoal">From the Anvil: Upcoming Projects
-                            </h3>
+                        <div class="mt-16 border-t border-dashed border-gray-700 pt-12">
+                            <h3 class="text-2xl font-bold text-center text-white">On The Horizon: Upcoming Projects</h3>
                             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div class="bg-linen p-4 rounded-lg border border-warm-grey/30">
-                                    <h4 class="font-semibold text-warm-brown">AI-Powered Portfolio Analyzer</h4>
-                                    <p class="text-sm text-charcoal/70 mt-1">A tool to analyze and provide insights on
+                                <div class="bg-midnight-card p-4 rounded-lg border border-gray-700/50">
+                                    <h4 class="font-semibold text-white">AI-Powered Portfolio Analyzer</h4>
+                                    <p class="text-sm text-light-blue mt-1">A tool to analyze and provide insights on
                                         investment portfolios.</p>
                                 </div>
-                                <div class="bg-linen p-4 rounded-lg border border-warm-grey/30">
-                                    <h4 class="font-semibold text-warm-brown">Personal Blog Platform</h4>
-                                    <p class="text-sm text-charcoal/70 mt-1">Developing a custom, lightweight blogging
+                                <div class="bg-midnight-card p-4 rounded-lg border border-gray-700/50">
+                                    <h4 class="font-semibold text-white">Personal Blog Platform</h4>
+                                    <p class="text-sm text-light-blue mt-1">Developing a custom, lightweight blogging
                                         engine from scratch.</p>
                                 </div>
-                                <div class="bg-linen p-4 rounded-lg border border-warm-grey/30">
-                                    <h4 class="font-semibold text-warm-brown">IoT Home Automation System</h4>
-                                    <p class="text-sm text-charcoal/70 mt-1">Connecting and controlling home devices
+                                <div class="bg-midnight-card p-4 rounded-lg border border-gray-700/50">
+                                    <h4 class="font-semibold text-white">IoT Home Automation System</h4>
+                                    <p class="text-sm text-light-blue mt-1">Connecting and controlling home devices
                                         through a central hub.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="w-full bg-paper bg-paper-texture py-16 sm:py-20 md:py-24" id="human">
+                <section class="w-full bg-deep-plum py-16 sm:py-20 md:py-24" id="human">
                     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="text-center mb-12">
-                            <h2 class="text-3xl font-bold text-warm-brown font-serif">The Human Element</h2>
-                            <p class="mt-4 text-lg max-w-3xl mx-auto text-charcoal/80">Roles that focus on connection,
+                            <h2 class="text-3xl font-bold text-white font-serif">The Human Element</h2>
+                            <p class="mt-4 text-lg max-w-3xl mx-auto text-light-grey">Roles that focus on connection,
                                 communication, and community building—the heart behind the craft.</p>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="bg-cream p-8 rounded-lg shadow-soft border border-warm-grey/20">
-                                <h3 class="text-xl font-bold text-charcoal">University Peer Tutor</h3>
-                                <p class="mt-3 text-charcoal/80 font-serif italic">"Empowering fellow students to grasp
+                        <div class="space-y-8 max-w-3xl mx-auto">
+                            <div class="bg-plum-card p-8 rounded-lg shadow-raised">
+                                <h3 class="text-xl font-bold text-white">University Peer Tutor</h3>
+                                <p class="mt-3 text-light-grey font-serif italic">"Empowering fellow students to grasp
                                     complex computer science concepts through clear, patient, and tailored instruction.
                                     Fostered a collaborative learning environment that improved academic performance and
                                     confidence."</p>
                             </div>
-                            <div class="bg-cream p-8 rounded-lg shadow-soft border border-warm-grey/20">
-                                <h3 class="text-xl font-bold text-charcoal">Content Writer (Personal Blog)</h3>
-                                <p class="mt-3 text-charcoal/80 font-serif italic">"Articulating thoughts on technology,
+                            <div class="bg-plum-card p-8 rounded-lg shadow-raised">
+                                <h3 class="text-xl font-bold text-white">Content Writer (Personal Blog)</h3>
+                                <p class="mt-3 text-light-grey font-serif italic">"Articulating thoughts on technology,
                                     personal growth, and creative processes. The blog serves as a digital journal to
                                     document my journey, share insights, and connect with a wider audience on a
                                     personal, reflective level."</p>
@@ -290,13 +288,13 @@
                     </div>
                 </section>
             </main>
-            <footer class="w-full bg-linen py-12 border-t border-warm-grey/50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-charcoal/60">
+            <footer class="w-full bg-deep-charcoal py-12 border-t border-gray-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
                     <p class="text-sm">© 2024 Hosain Ahmed. All Rights Reserved.</p>
                     <div class="flex justify-center gap-6 mt-4">
-                        <a class="hover:text-warm-brown" href="#">LinkedIn</a>
-                        <a class="hover:text-warm-brown" href="#">GitHub</a>
-                        <a class="hover:text-warm-brown" href="#">Twitter</a>
+                        <a class="hover:text-accent-gold" href="#">LinkedIn</a>
+                        <a class="hover:text-accent-gold" href="#">GitHub</a>
+                        <a class="hover:text-accent-gold" href="#">Twitter</a>
                     </div>
                 </div>
             </footer>
